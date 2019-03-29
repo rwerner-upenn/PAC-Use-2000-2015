@@ -1,5 +1,5 @@
 /********************************************************************************************************************
-* Goal: Create analystical data set for the summary of Post–Acute Care use among Medicare beneficiaries 2000-2015
+* Goal: Create analystical data set for the summary of Postâ€“Acute Care use among Medicare beneficiaries 2000-2015
 * Created by: Mingyu Qi
 * First created on: 11/14/2017
 * Last updated on: 03/28/2019 
@@ -30,7 +30,7 @@ set  Medpar.Mp100mod_2000 (keep=BENE_ID AGE_CNT SSLSSNF DSCHRGDT SPCLUNIT ADMSND
 where (substr(PRVDR_NUM,3,1) in ('0','M','R','S','T') or substr(PRVDR_NUM,3,2)="13") & SPCLUNIT not in ('M','R','S','T');
 run; *207,126,674 records;
 
-*Limit to patients who were discharged alive between Jan 1st 2000 and Dec 28th 2015;
+*Limit to records of patients who were discharged alive between Jan 1st 2000 and Dec 28th 2015;
 proc sql;
 create table temp.MedPAR2000_15_2 as
 select * from temp.MedPAR2000_15
