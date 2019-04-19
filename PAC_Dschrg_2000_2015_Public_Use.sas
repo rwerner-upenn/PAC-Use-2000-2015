@@ -16,7 +16,7 @@
  Step 1 - Generate eligible hospitalization records; 
 ********************************************************/ 
 
-***Read in acute care hospital stay records from MedPAR claims 2000-2015;
+***Read in acute care hospital stay records from MedPAR claims 2000-2015; 
 data temp.MedPAR2000_15;
 set  Medpar.Mp100mod_2000 (keep=BENE_ID AGE_CNT SSLSSNF DSCHRGDT SPCLUNIT ADMSNDT DSCHRGCD DSTNTNCD DRG_CD PT_ID PRVDR_NUM SRC_ADMS TYPE_ADM UTIL_DAY) 
      Medpar.Mp100mod_2001 (keep=BENE_ID AGE_CNT SSLSSNF DSCHRGDT SPCLUNIT ADMSNDT DSCHRGCD DSTNTNCD DRG_CD PT_ID PRVDR_NUM SRC_ADMS TYPE_ADM UTIL_DAY) 
