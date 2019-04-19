@@ -1,4 +1,5 @@
 /************************************************************************************************************************************************************
+  
   PLEASE CITE THIS ARTICLE AS:
  
   Werner RM, Konetzka RT. Trends in Post–Acute Care Use Among Medicare Beneficiaries: 2000 to 2015. JAMA. 2018;319(15):1616–1617. doi:10.1001/jama.2018.2408
